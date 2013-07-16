@@ -1,22 +1,22 @@
 //
-//  LHEAppDelegate.m
-//  LHECarousel
+//  LHAppDelegate.m
+//  LHCarousel
 //
 //  Created by James Barrow on 03/04/2013.
 //  Copyright (c) 2013 Pig on a Hill Productions. All rights reserved.
 //
 
-#import "LHEAppDelegate.h"
+#import "LHAppDelegate.h"
 
-#import "LHEViewController.h"
+#import "LHViewController.h"
 
-@implementation LHEAppDelegate
+@implementation LHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[LHEViewController alloc] initWithNibName:@"LHEViewController" bundle:nil];
+    self.viewController = [[LHViewController alloc] initWithNibName:@"LHViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
