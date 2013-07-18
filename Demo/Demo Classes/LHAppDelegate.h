@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class LHViewController;
+@class ViewController;
 
 @interface LHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) LHViewController *viewController;
+@property (strong, nonatomic) ViewController *viewController;
 
 @end

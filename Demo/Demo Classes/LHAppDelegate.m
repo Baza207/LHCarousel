@@ -8,7 +8,7 @@
 
 #import "LHAppDelegate.h"
 
-#import "LHViewController.h"
+#import "ViewController.h"
 
 @implementation LHAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[LHViewController alloc] initWithNibName:@"LHViewController" bundle:nil];
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
