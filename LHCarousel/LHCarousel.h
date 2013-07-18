@@ -21,6 +21,7 @@
 - (void)setScrollView:(UIScrollView *)scrollView;
 - (void)setScrollView:(UIScrollView *)scrollView pageControl:(UIPageControl *)pageControl;
 
+- (void)setViewsArray:(NSArray *)viewsArray;
 - (void)setBoxSize:(CGSize)boxSize viewsArray:(NSArray *)viewsArray;
 
 - (IBAction)pageControlDidChange:(id)sender;

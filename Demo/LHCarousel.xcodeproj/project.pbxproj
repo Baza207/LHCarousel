@@ -303,7 +303,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo Classes/LHCarousel-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Demo Classes/LHCarousel-Info.plist";
 				PRODUCT_NAME = LHCarousel;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -315,7 +315,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo Classes/LHCarousel-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Demo Classes/LHCarousel-Info.plist";
 				PRODUCT_NAME = LHCarousel;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

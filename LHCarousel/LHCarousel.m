@@ -49,6 +49,11 @@
     [_scrollView setDelegate:self];
 }
 
+- (void)setViewsArray:(NSArray *)viewsArray
+{
+    [self setBoxSize:[_scrollView bounds].size viewsArray:viewsArray];
+}
+
 - (void)setBoxSize:(CGSize)boxSize viewsArray:(NSArray *)viewsArray
 {
     _boxSize = boxSize;

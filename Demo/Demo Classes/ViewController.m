@@ -18,7 +18,7 @@
     NSArray *viewsArray = @[viewA, viewB, viewC, viewD, viewE];
     
     carousel = [[LHCarousel alloc] initWithScrollView:carouselScrollView pageControl:carouselPageControl];
-    [carousel setBoxSize:[carouselScrollView bounds].size viewsArray:viewsArray];
+    [carousel setViewsArray:viewsArray];
 }
 
 - (void)didReceiveMemoryWarning
