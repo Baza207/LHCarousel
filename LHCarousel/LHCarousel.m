@@ -70,6 +70,11 @@
     [_pageControl setNumberOfPages:[_viewsArray count]];
 }
 
+- (void)refeshViews
+{
+    [self setViewsArray:_viewsArray];
+}
+
 #pragma mark - UIScrollViewDelegate Methods
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

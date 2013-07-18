@@ -23,6 +23,7 @@
 
 - (void)setViewsArray:(NSArray *)viewsArray;
 - (void)setBoxSize:(CGSize)boxSize viewsArray:(NSArray *)viewsArray;
+- (void)refeshViews;
 
 - (IBAction)pageControlDidChange:(id)sender;
 
