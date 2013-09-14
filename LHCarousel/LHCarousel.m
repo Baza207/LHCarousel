@@ -40,13 +40,13 @@
 {
     _scrollView = scrollView;
     [_scrollView setDelegate:self];
+    [_scrollView setScrollsToTop:NO];
 }
 
 - (void)setScrollView:(UIScrollView *)scrollView pageControl:(UIPageControl *)pageControl
 {
-    _scrollView = scrollView;
+    [self setScrollView:scrollView];
     _pageControl = pageControl;
-    [_scrollView setDelegate:self];
 }
 
 - (void)setViewsArray:(NSArray *)viewsArray
@@ -110,6 +110,17 @@
 {
     NSUInteger pageNum = [_scrollView contentOffset].x/_boxSize.width;
     [_pageControl setCurrentPage:pageNum];
+    
+    __weak UIView *currentView = [_viewsArray objectAtIndex:[_pageControl currentPage]];
+    CATransform3D transform3D = CATransform3DIdentity;
+    [[currentView layer] setTransform:transform3D];
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    __weak UIView *currentView = [_viewsArray objectAtIndex:[_pageControl currentPage]];
+    CATransform3D transform3D = CATransform3DIdentity;
+    [[currentView layer] setTransform:transform3D];
 }
 
 #pragma mark - UIPageControl Methods
